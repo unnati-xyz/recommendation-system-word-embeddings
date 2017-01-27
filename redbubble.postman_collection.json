@@ -1,0 +1,55 @@
+{
+	"id": "1a75876e-3c77-03f1-1834-c2360f694d1b",
+	"name": "redbubble",
+	"description": "",
+	"order": [
+		"9f553f52-1093-bc48-2b40-76fab2d19cf0",
+		"4f0eb310-2886-9230-5bdd-f90bfeca61d4"
+	],
+	"folders": [],
+	"timestamp": 1485515887185,
+	"owner": "230475",
+	"public": false,
+	"requests": [
+		{
+			"id": "4f0eb310-2886-9230-5bdd-f90bfeca61d4",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:5000/search",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1a75876e-3c77-03f1-1834-c2360f694d1b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:5000/search",
+			"description": "Searching for products with relevant tags",
+			"descriptionFormat": "html",
+			"time": 1485520472425,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"search_query\" : \"cat dog human pokemon\"\n}"
+		},
+		{
+			"id": "9f553f52-1093-bc48-2b40-76fab2d19cf0",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:5000/tags/nextTag",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485520490232,
+			"name": "localhost:5000/tags/nextTag",
+			"description": "",
+			"collectionId": "1a75876e-3c77-03f1-1834-c2360f694d1b",
+			"responses": [],
+			"rawModeData": "{\n\t\"tags\":[\"dbz\"]\n}"
+		}
+	]
+}
